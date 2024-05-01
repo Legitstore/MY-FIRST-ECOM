@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheap Market Place</title>
+    <!-- ---------- FONTAWESOME CDN LINK ----------  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!-- ---------- BOCION CDN LINK ----------  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- ---------- COSTOM LINK ----------  -->
+    <link rel="stylesheet" href="cheapmarket.css">
+    <link rel="stylesheet" href="media.css">
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+    
+        <div class="list"> 
+            <h1>Sell Faster,</h1>
+            <h1>Buy Smarter</h1>
+        </div>
+        
+        <div class="click">
+            <a href="#login" id="login-btn">Login</a>
+            <p>|</p>
+            <a href="#register" id="regis-user">Register</a>
+             
+            <div class="sell">
+                <a href="#" class="selll">Sell</a>
+            </div>
+        </div>
+
+
+        <div class="sign-in">
+            <div class="signinner">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="email" placeholder="Your Email Id" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="password" placeholder="Password" required>
+                        <i class="fas fa-eye-slash" id="show-password"></i>
+                    </div>
+                    <div class="forgot-field">
+                        <a href="#">Forgot Password ?</a>
+                    </div>
+                    <button type="submit">Submit</button>
+                    <div class="checking">
+                        <input type="checkbox"><span>Remember Me</span>
+                    </div>
+                    <!-- <div class="forgot-field">
+                        <a href="#">Forgot Password ?</a>
+                    </div> -->
+
+                    <div class="sign-link">
+                        <p>I Am New Here <a href="#register">Register</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+       <div class="sign-up">
+            <div class="signupinner">
+                <h2>Register</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <input type="text" placeholder="Enter Your Full Name" required> 
+                    </div>
+                    <div class="input-box">
+                        <input type="email" placeholder="Enter Your Email Id" required> 
+                    </div>
+                    <div class="input-box">
+                        <input type="password" id="passwording" placeholder="Enter Your Password" required>
+                        <i class="fas fa-lock" id="show-lock"></i>
+                    </div>
+                    <button type="submit">Register</button>
+                    <div class="checking">
+                        <input type="checkbox"><span>I agree to the <a href="#">Term & conditions</a></span>
+                    </div>
+                   
+                    <div class="sign-link">
+                        <p>Already have an account? <a href="#">Log In</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- __________ MAIN ARTICLE SECTION __________ -->
+    <article>
+        <div class="article-inner">
+            <div class="heading">
+                <h3>What are you looking for?</h3>
+                <h4>Search no further we got you covered</h4>
+            </div>
+            <div class="imag">
+                <!-- <img src="images/cartoon-car.png" alt=""> -->
+                <img src="images/carcopyy.png" alt="" class="copycar">
+                <form action="">
+                    <input type="search" placeholder="Search here...">
+                    <button type="button"><i class="bx bx-search"></i></button>
+                </form>
+                <img src="images/feed-image.png" class="feed">
+                
+                <!-- <img src="images/cartoon-furniture.png" alt=""> -->
+            </div>
+            
+        </div>
+    </article>
+    <!-- __________ MAIN SECTION __________ -->
+    
+    <main>
+        <div class="left-siderbar">
+            <div class="left-inner">
+                <a href="#">
+                    <img src="images/plus-ads-red.jpg" alt="">
+                    <div class="content">
+                        <p>Post Ads</p>
+                        <small>100, 240 ads</small>
+                    </div>
+                    <div class="bx bxs-chevron-right"></div>
+                </a>
+                <a href="#">
+                    <img src="images/tw.png" alt="">
+                    <div class="content">
+                        <p>Trends</p>
+                        <small>100, 240 ads</small>
+                    </div>
+                    <div class="bx bxs-chevron-right"></div>
+                </a>
+                <a href="#">
+                    <img src="images/cartoon-car.png" alt="">
+                    <div class="content">
+                        <p>Vehicles</p>
+                        <small>40, 240 ads</small>
+                    </div>
+                    <div class="bx bxs-chevron-right"></div>
+                </a>
+                <a href="#">
+                    <img src="images/dog-cartoon.jpg" alt="">
+                    <div class="content">
+                        <p>Animals & Pets</p>
+                        <small>20, 240 ads</small>
+                    </div>
+                    <div class="bx bxs-chevron-right"></div>
+                </a>
+                <a href="#">
+                    <img src="images/cartoon-furniture.png" alt="">
+                    <div class="content">
+                        <p>Furnitures</p>
+                        <small>120, 140 ads</small>
+                    </div>
+                    <div class="bx bxs-chevron-right"></div>
+                </a>
+                <a href="#">
+                    <img src="images/cartoon-dress.png" alt="">
+                    <div class="content">
+                        <p>Fashions</p>
+                        <small>50, 150 ads</small>
+                    </div>
+                    <div class="bx bxs-chevron-right"></div>
+                </a>
+                <a href="#">
+                    <img src="images/cartoon-desktop.png" alt="">
+                    <div class="content">
+                        <p>Computers</p>
+                        <small>340, 560 ads</small>
+                    </div>
+                    <div class="bx bxs-chevron-right"></div>
+                </a>
+                <a href="#">
+                    <img src="images/cartoon-health.png" alt="">
+                    <div class="content">
+                        <p>Healths</p>
+                        <small>440, 160 ads</small>
+                    </div>
+                    <div class="bx bxs-chevron-right"></div>
+                </a>
+                <a href="#">
+                    <img src="images/cartoon-sport.jpg" alt="">
+                    <div class="content">
+                        <p>Sports</p>
+                        <small>10, 220 ads</small>
+                    </div>
+                    <div class="bx bxs-chevron-right"></div>
+                </a>
+                <a href="#">
+                    <img src="images/cartoon-house.jpg" alt="">
+                    <div class="content">
+                        <p>Properties</p>
+                        <small>70, 220 ads</small>
+                    </div>
+                    <div class="bx bxs-chevron-right"></div>
+                </a>
+                <a href="#">
+                    <img src="images/cartoon-kids.png" alt="">
+                    <div class="content">
+                        <p>Kids Accessories</p>
+                        <small>710, 230 ads</small>
+                    </div>
+                    <div class="bx bxs-chevron-right"></div>
+                </a>
+                <a href="#">
+                    <img src="images/cartoon-phone.jpg" alt="">
+                    <div class="content">
+                        <p> Phone / Tablets</p>
+                        <small>350, 120 ads</small>
+                    </div>
+                    <div class="bx bxs-chevron-right"></div>
+                </a>
+                <a href="#">
+                    <img src="images/cartoon-apple.jpg" alt="">
+                    <div class="content">
+                        <p> Foods</p>
+                        <small>750, 720 ads</small>
+                    </div>
+                    <div class="bx bxs-chevron-right"></div>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="right-siderbar">
+            <h1>Trends ads</h1>
+            <hr>
+            <div class="grid-list">
+                <div class="gid-box">
+                    <div class="bx bx-label label"></div>
+                    <img src="images/laptop.jpg">
+                    <h4>Hp Elite Notebook</h4>
+                    <p>Core i5 | 500GB space</p>
+                    <span class="price"><i class="fa-sharp fa-solid fa-naira-sign"></i>450, 000</span>
+                    <div class="rate">
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star-half"></div>
+                    </div>
+                    <button class="btn">Buy Now</button>
+                </div>
+                <div class="gid-box">
+                    <div class="bx bx-label label"></div>
+                    <img src="images/phonersd.jpg">
+                    <h4>iPhone 13 pro max</h4>
+                    <p>256GB Space Grey</p>
+                    <span class="price"><i class="fa-sharp fa-solid fa-naira-sign"></i>1, 450, 000</span>
+                    <div class="rate">
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star-half"></div>
+                    </div>
+                    <button class="btn">Buy Now</button>
+                </div>
+                <div class="gid-box">
+                    <div class="bx bx-label label"></div>
+                    <img src="images/phone-1.jpg">
+                    <h4>iPhone 13 pro max</h4>
+                    <p>256GB Space Grey</p>
+                    <span class="price"><i class="fa-sharp fa-solid fa-naira-sign"></i>1, 450, 000</span>
+                    <div class="rate">
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star-half"></div>
+                    </div>
+                    <button class="btn">Buy Now</button>
+                </div>
+                <div class="gid-box">
+                    <div class="bx bx-label label"></div>
+                    <img src="images/car.jpg">
+                    <h4>BMW GS 450</h4>
+                    <p>Nice interior</p>
+                    <span class="price"><i class="fa-sharp fa-solid fa-naira-sign"></i>11, 850, 000</span>
+                    <div class="rate">
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star-half"></div>
+                    </div>
+                    <button class="btn">Buy Now</button>
+                </div>
+                <div class="gid-box">
+                    <div class="bx bx-label label"></div>
+                    <img src="images/car1.jpg">
+                    <h4>BMW GS 450</h4>
+                    <p>Nice interior</p>
+                    <span class="price"><i class="fa-sharp fa-solid fa-naira-sign"></i>11, 850, 000</span>
+                    <div class="rate">
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star-half"></div>
+                    </div>
+                    <button class="btn">Buy Now</button>
+                </div>
+                <div class="gid-box">
+                    <div class="bx bx-label label"></div>
+                    <img src="images/car1.jpg">
+                    <h4>BMW GS 450</h4>
+                    <p>Nice interior</p>
+                    <span class="price"><i class="fa-sharp fa-solid fa-naira-sign"></i>11, 850, 000</span>
+                    <div class="rate">
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star-half"></div>
+                    </div>
+                    <button class="btn">Buy Now</button>
+                </div>
+                <div class="gid-box">
+                    <div class="bx bx-label label"></div>
+                    <img src="images/desktop-1.jpg">
+                    <h4>Hp Monitor</h4>
+                    <p>used</p>
+                    <span class="price"><i class="fa-sharp fa-solid fa-naira-sign"></i>250, 000</span>
+                    <div class="rate">
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star-half"></div>
+                    </div>
+                    <button class="btn">Buy Now</button>
+                </div>
+                <div class="gid-box">
+                    <div class="bx bx-label label"></div>
+                    <img src="images/desktop.jpg">
+                    <h4>Apple  Monitor</h4>
+                    <p>Brand New</p>
+                    <span class="price"><i class="fa-sharp fa-solid fa-naira-sign"></i>1,250, 000</span>
+                    <div class="rate">
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star-half"></div>
+                    </div>
+                    <button class="btn">Buy Now</button>
+                </div>
+                <div class="gid-box">
+                    <div class="bx bx-label label"></div>
+                    <img src="images/desktop.jpg">
+                    <h4>Apple  Monitor</h4>
+                    <p>Brand New</p>
+                    <span class="price"><i class="fa-sharp fa-solid fa-naira-sign"></i>1,250, 000</span>
+                    <div class="rate">
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star-half"></div>
+                    </div>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="grid-list">
+                <div class="gid-box">
+                    <div class="bx bx-label label"></div>
+                    <img src="images/laptop.jpg">
+                    <h4>Hp Elite Notebook</h4>
+                    <p>Core i5 | 500GB space</p>
+                    <span class="price"><i class="fa-sharp fa-solid fa-naira-sign"></i>450, 000</span>
+                    <div class="rate">
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star-half"></div>
+                    </div>
+                    <button class="btn">Buy Now</button>
+                </div>
+                <div class="gid-box">
+                    <div class="bx bx-label label"></div>
+                    <img src="images/phonersd.jpg">
+                    <h4>iPhone 13 pro max</h4>
+                    <p>256GB Space Grey</p>
+                    <span class="price"><i class="fa-sharp fa-solid fa-naira-sign"></i>1, 450, 000</span>
+                    <div class="rate">
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star-half"></div>
+                    </div>
+                    <button class="btn">Buy Now</button>
+                </div>
+                <div class="gid-box">
+                    <div class="bx bx-label label"></div>
+                    <img src="images/phone-1.jpg">
+                    <h4>iPhone 13 pro max</h4>
+                    <p>256GB Space Grey</p>
+                    <span class="price"><i class="fa-sharp fa-solid fa-naira-sign"></i>1, 450, 000</span>
+                    <div class="rate">
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star-half"></div>
+                    </div>
+                    <button class="btn">Buy Now</button>
+                </div>
+                <div class="gid-box">
+                    <div class="bx bx-label label"></div>
+                    <img src="images/car.jpg">
+                    <h4>BMW GS 450</h4>
+                    <p>Nice interior</p>
+                    <span class="price"><i class="fa-sharp fa-solid fa-naira-sign"></i>11, 850, 000</span>
+                    <div class="rate">
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star-half"></div>
+                    </div>
+                    <button class="btn">Buy Now</button>
+                </div>
+                <div class="gid-box">
+                    <div class="bx bx-label label"></div>
+                    <img src="images/car1.jpg">
+                    <h4>BMW GS 450</h4>
+                    <p>Nice interior</p>
+                    <span class="price"><i class="fa-sharp fa-solid fa-naira-sign"></i>11, 850, 000</span>
+                    <div class="rate">
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star-half"></div>
+                    </div>
+                    <button class="btn">Buy Now</button>
+                </div>
+                <div class="gid-box">
+                    <div class="bx bx-label label"></div>
+                    <img src="images/car1.jpg">
+                    <h4>BMW GS 450</h4>
+                    <p>Nice interior</p>
+                    <span class="price"><i class="fa-sharp fa-solid fa-naira-sign"></i>11, 850, 000</span>
+                    <div class="rate">
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star-half"></div>
+                    </div>
+                    <button class="btn">Buy Now</button>
+                </div>
+                <div class="gid-box">
+                    <div class="bx bx-label label"></div>
+                    <img src="images/desktop-1.jpg">
+                    <h4>Hp Monitor</h4>
+                    <p>used</p>
+                    <span class="price"><i class="fa-sharp fa-solid fa-naira-sign"></i>250, 000</span>
+                    <div class="rate">
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star-half"></div>
+                    </div>
+                    <button class="btn">Buy Now</button>
+                </div>
+                <div class="gid-box">
+                    <div class="bx bx-label label"></div>
+                    <img src="images/desktop.jpg">
+                    <h4>Apple  Monitor</h4>
+                    <p>Brand New</p>
+                    <span class="price"><i class="fa-sharp fa-solid fa-naira-sign"></i>1,250, 000</span>
+                    <div class="rate">
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star-half"></div>
+                    </div>
+                    <button class="btn">Buy Now</button>
+                </div>
+                <div class="gid-box">
+                    <div class="bx bx-label label"></div>
+                    <img src="images/desktop.jpg">
+                    <h4>Apple  Monitor</h4>
+                    <p>Brand New</p>
+                    <span class="price"><i class="fa-sharp fa-solid fa-naira-sign"></i>1,250, 000</span>
+                    <div class="rate">
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star"></div>
+                        <div class="bx bxs-star-half"></div>
+                    </div>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="cheapmarket.js"></script>
+</body>
+</html>

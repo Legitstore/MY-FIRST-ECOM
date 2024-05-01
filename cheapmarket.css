@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'lato', sans-serif;
+}
+:root{
+    --white: #fff;
+    --light-white: #ccc;
+    --green: #2bc48a;
+    --rgreen:#008000;
+    --off-white: #a5b7c6;
+    --semi-black: #374957;
+    --light: #5f7d95;
+    --text: #1a1a1a;
+    --boxsd: 0 5px 10px rgba(0,0,0,0.15);
+    --yellow: rgb(243, 181, 25);
+    --main-green: #088178;
+}
+header{
+    top: 0;
+    position: sticky;
+    display: flex;
+    padding: 10px 10%;
+    align-items: center;
+    box-shadow: var(--boxsd);
+    background: var(--rgreen);
+    z-index: 10;
+    justify-content: space-between;
+}
+header .logo img{
+    width: 120px;
+    cursor: pointer;
+}
+header .list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+header .list h1{
+    font-size: 25px;
+    margin: 0 5px;
+    color: var(--light);
+}
+
+header .click{
+    display: flex;
+    align-items: center;
+    color: var(--white);
+
+}
+header .click p{
+    margin: 0 9px;
+}
+header .click a{
+    font-size: 18px;
+    color: var(--white);
+    cursor: pointer;
+}
+header .click a:hover{
+    color: var(--light);
+}
+header .click .sell{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-left: 20px;
+    background: var(--green);
+    background: var(--green);
+}
+header .click .sell a:hover,
+header .click .sell:hover{
+    background: var(--rgreen);
+    color: var(--text);
+}
+header .click .sell a{
+    color: var(--white);
+}
+
+
+/* _____________ header form _____________  */
+.sign-up,
+.sign-in{
+    position: absolute;
+    top: 110%;
+    right: 120px;
+    width: 320px;
+    height: 300px;
+    background: var(--green);
+    border-radius: 10px;
+    max-height: 0px;
+    overflow: hidden;
+    box-shadow: var(--boxsd);
+    cursor: pointer;
+    transition: 1s linear;
+}
+
+.sign-in.active{
+    transition: 1s linear;
+    max-height: 350px;
+}
+.sign-up.active{
+    transition: 1s linear;
+    max-height: 350px;
+}
+.signupinner,
+.signinner{
+    padding: 10px 2%;
+}
+.sign-up h2,
+.sign-in h2{
+    text-align: center;
+    color: var(--white);
+    font-size: 25px;
+}
+.sign-up form,
+.sign-in form{
+    width: 100%;
+}
+.sign-up form, .input-box,
+.sign-in form .input-field{
+    margin: 10px 0;
+    position: relative;
+}
+.sign-up form, .input-box input,
+.sign-in form .input-field input{
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    color: var(--semi-black);
+    font-size: 13px;
+    border-radius: 6px;
+    border: 0;
+}
+.input-field i{
+    position: absolute;
+    right: 10px;
+    z-index: 10;
+    top: 10px;
+    font-size: 14px;
+}
+.input-box i{
+    position: absolute;
+    right: 10px;
+    z-index: 10;
+    top: 10px;
+    font-size: 14px;
+}
+.sign-up form button,
+.sign-in form button{
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 6px;
+    border: 0;
+    background: var(--rgreen);
+    color: var(--white);
+    cursor: pointer;
+}
+.sign-up form button:hover,
+.sign-in form button:hover{
+    background: var(--light-white);
+    color: var(--text);
+}
+.checking{
+    cursor: pointer;
+    margin: 10px 0;
+    color: var(--white);
+}
+.checking span{
+    font-size: 13px;
+    padding-left: 4px;
+}
+/* .checking a */
+.sign-link p,
+.forgot-field p{
+    cursor: pointer;
+    font-size: 13px;
+    color: var(--white);
+}
+
+.checking a:hover,
+.sign-link a:hover,
+.forgot-field a:hover{
+    text-decoration: underline;
+}
+.sign-link {
+    cursor: pointer;
+    margin: 10px 0;
+    font-size: 13px;
+    /* color: var(--white); */
+}
+.sign-link a{
+    color: var(--semi-black);
+}
+/* __________ MAIN SECTION __________  */
+
+main{
+    display: flex;
+    /* min-height: 100vh; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10% 50px;
+    position: relative;
+    top: 0;
+    margin-bottom: 50px;
+
+}
+
+/* __________ MAIN  ARTICLE SECTION __________  */
+article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--green);
+    min-height: 40vh;
+    flex-wrap: wrap;
+}
+article .heading{
+    font-size: 35px;
+    color: var(--text);
+    margin-top: 30px;
+}
+.article-inner{
+    padding: 10px 10% 0;
+    /* min-width: 1050px; */
+    height: 100%;
+    /* background: var(--white); */
+}
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.imag {
+    display: flex;
+    align-items: center;
+}
+.copycar{
+    margin-top: 50px;
+    width: 250px;
+}
+.feed{
+    width: 350px;
+}
+.imag input{
+    height: 40px;
+    width: 430px;
+    padding: 0 10px;
+    font-size: 16px;
+    color: var(--semi-black);
+    border-radius: 8px 0 0 8px;
+    border: 0;
+    outline: 0;
+    background: #f1f1f1;
+}
+.imag form{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+.imag button{
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    border: 0;
+    font-size: 22px;
+    background: var(--rgreen);
+    color: var(--white);
+    border-radius: 0 8px 8px 0;
+}
+.imag button:hover{
+    background: var(--main-green);
+}
+/* __________ MAIN SECTION  LEFT-SIDEBAR __________  */
+.left-siderbar{
+    background: var(--white);
+    width: 20%;
+    height: 100vh;
+    position: sticky;
+    /* position: relative; */
+    margin-right: 10px;
+    align-self: start;
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+}
+.left-inner{
+    position: relative;
+    padding: 10px 2%;
+}
+.left-inner a{
+    cursor: pointer;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    color: var(--text);
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+.left-inner a:last-child{
+    border-bottom: none;
+}
+.left-inner a:hover{
+    transition: 1s linear;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: rgba(0,0,0,0.15);
+}
+.left-inner a div{
+    font-size: 20px;
+}
+.left-inner a img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.left-inner a .content{
+    width: 100%;
+    margin-left: 10px;
+}
+.left-inner a .content p{
+    font-size: 18px;
+}
+.left-inner a .content:hover{
+    font-size: 20px;
+    color: var(--green);
+}
+.left-inner a .content small{
+    font-size: 11px;
+}
+
+/* __________ MAIN SECTION  RIGHT-SIDEBAR __________  */
+.right-siderbar{
+    width: 85%;
+    height: 100%;
+    position: relative;
+    align-self: start;
+}
+.right-siderbar h1{
+    font-size: 20px;
+    color: var(--text);
+}
+.right-siderbar hr{
+    margin: 7px 0 20px;
+    background: rgba(0,0,0,0.15);
+    height: 1px;
+}
+.grid-list{
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.gid-box{
+    padding: 0 0 10px 0;
+    position: relative;
+    text-align: center;
+    background: var(--white);
+    box-shadow: var(--boxsd);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.gid-box:hover{
+    border: 3px solid rgba(0,0,0,0.35);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.35);
+}
+.gid-box img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+}
+.gid-box h4{
+    margin: 10px 0 0;
+    font-size: 20px;
+    color: var(--text);
+}
+.gid-box p{
+    color: var(--semi-black);
+    font-size: 14px;
+}
+.gid-box .price{
+    color: var(--green);
+    font-size: 18px;
+}
+.rate{
+    margin: 5px 0;
+    font-size: 16px;
+    color: var(--yellow);
+}
+.label{
+    color: var(--white);
+    background: var(--green);
+    position: absolute;
+    right: 15px;
+    top: 48%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    margin: 10px 0;
+    background: var(--green);
+    width: 100px;
+    height: 40px;
+    color: var(--white);
+    font-size: 18px;
+    border: 0;
+    border-radius: 6px;
+    transition: 1s linear;
+}
+.btn:hover{
+    background: var(--light-white);
+    color: var(--text);
+    transition: 1s linear;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
